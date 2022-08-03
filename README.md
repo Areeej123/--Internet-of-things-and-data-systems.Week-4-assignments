@@ -19,10 +19,11 @@ The database contains one table and one column to store the values sent to it
 #  Using the Function POST
 Similar to the GET function, an HTML and CSS file is created to receive user input. Instead of using the same HTML file, a separate PHP file will be used. To connect the HTML with the PHP file, the following line should be written inside the form div in the HTML file.
 
-<form action="connect.php" method="post">
+* <form action="connect.php" method="post">
+    
 The following PHP file will connect with the database, then will take the input Svalue and save it.
 
-<?php
+* <?php
     $Svalue = $_POST['Svalue'];
 // Database connection
 $conn = new mysqli('localhost','root','','database');
