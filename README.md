@@ -25,25 +25,25 @@ The following PHP file will connect with the database, then will take the input 
 
                 <?php
     $Svalue = $_POST['Svalue'];
-// Database connection
-$conn = new mysqli('localhost','root','','database');
-if($conn->connect_error){
-    echo "$conn->connect_error";
-    die("Connection Failed : ". $conn->connect_error);
-} else {
-    $stmt = $conn->prepare("insert into data(Svalue) values(?)");
-    $stmt->bind_param("i", $Svalue);
-    $execval = $stmt->execute();
-    echo $execval;
-    $execval = $stmt->execute();
-    echo "The value have been added successfully...";
-    $stmt->close();
-    $conn->close();
-}
-?>
+      // Database connection
+      $conn = new mysqli('localhost','root','','database');
+       if($conn->connect_error){
+       echo "$conn->connect_error";
+        die("Connection Failed : ". $conn->connect_error);
+                         } else {
+      $stmt = $conn->prepare("insert into data(Svalue) values(?)");
+      $stmt->bind_param("i", $Svalue);
+      $execval = $stmt->execute();
+      echo $execval;
+      $execval = $stmt->execute();
+      echo "The value have been added successfully...";
+      $stmt->close();
+      $conn->close();
+       }
+        ?>
   
   
- References:
+#  References:
 https://www.guru99.com/difference-get-post-http.html
 https://youtu.be/UzwyDdX3TS8
 https://demo.phpmyadmin.net/master-config/
