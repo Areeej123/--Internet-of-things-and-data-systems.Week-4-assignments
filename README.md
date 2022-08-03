@@ -44,6 +44,7 @@ The following PHP file will connect with the database, then will take the input 
   
   
 #  References:
-https://www.guru99.com/difference-get-post-http.html
-https://youtu.be/UzwyDdX3TS8
-https://demo.phpmyadmin.net/master-config/
+ https://www.guru99.com/difference-get-post-http.html 
+ https://youtu.be/UzwyDdX3TS8
+ https://demo.phpmyadmin.net/master-config/
+ 
