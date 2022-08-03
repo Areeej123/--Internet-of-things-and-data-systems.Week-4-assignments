@@ -23,7 +23,7 @@ Similar to the GET function, an HTML and CSS file is created to receive user inp
     
 The following PHP file will connect with the database, then will take the input Svalue and save it.
 
-* <?php
+<?php
     $Svalue = $_POST['Svalue'];
 // Database connection
 $conn = new mysqli('localhost','root','','database');
